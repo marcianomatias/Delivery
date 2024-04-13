@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-top pedido"></div>
+    <header class="width-fix mt-3">
+        <div class="card">
+            <div class="d-flex justify-content-start">
+                <a href="./index.html" class="container-voltar">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="infos text-center">
+                    <h1 class="mb-3 fw-bold fs-3">Acompanhar pedido!</h1>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <section class="pedido width-fix mt-4">
+        <div class="card card-status-pedido mb-4">
+            <div class="detalhes-produtos">
+                <div class="infos-produto">
+                    <p class="name-total mb-0 fw-bold">Total: </p>
+                    <p class="price-total mb-0 fw-bold">R$ 171,00</p>
+                </div>
+            </div>
+            <div class="detalhes-produtos-acoes">
+                <i class="fab fa-whatsapp"></i>
+                <p class="mb-0 mt-1">Mensagem</p>
+            </div>
+            <div class="detalhes-produtos-acoes">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p class="mb-0 mt-1">Localização do Pedido: </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pedido width-fix mt-4">
+        <div class="card card-status-pedido hidden">
+            <div class="img-icon-details">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="infos">
+            <p class="name mb-1 fw-bold"> Nenhum pedido realizado!
+            </p>
+            <span class="text mb-0">Faça seu Pedido! Para acompanhar o status.</span>
+           </div> 
+        </div> 
+
+        <div class="card card-status-pedido mt-2 cancelado ">
+            <div class="img-icon-details">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-1 fw-bold">Pedido Cancelado!</p>
+                <span class="text mb-0">Seu pedido foi cancelado! Entre em contato para mais informações.</span>
+            </div>
+        </div>
+
+        <div class="card card-status-pedido mt-2 active">
+            <div class="img-icon-details">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-1 fw-bold">Pedido Enviado!</p>
+                <span class="text mb-0">Aguardando a confirmação da loja.</span>
+            </div>
+        </div>
+
+        <div class="card card-status-pedido mt-2 pending">
+            <div class="img-icon-details">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0 fw-bold">Preparando!</p>
+            </div>
+        </div>
+        <div class="card card-status-pedido mt-2 pending">
+            <div class="img-icon-details">
+                <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0 fw-bold">Pedido em transorte!</p>
+            </div>
+        </div>
+        <div class="card card-status-pedido mt-2 pending">
+            <div class="img-icon-details">
+                <i class="far fa-bell"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0 fw-bold">Pedido pronto para retirada!</p>
+            </div>
+        </div>
+    </section>
+   
+ 
+    <section class="menu-bottom width-fix mt-0" id="menu-bottom" >
+        <a href="./index.html"  class="menu-bottom-item ">
+            <i class="fas fa-book-open"></i>&nbsp; Cardápio
+        </a>
+        <a href="./pedido.html"  class="menu-bottom-item active">
+            <i class="fa-solid fa-utensils"></i> Pedido
+        </a>
+        <a href="./carrinho.html" class="menu-bottom-item">
+            <span class="badge-total-carrinho">2</span>
+           <i class="fa fa-cart-shopping"></i> Carrinho
+        </a>
+    </section>
+
+     <section class="menu-bottom disable hidden" id="menu-botton-closed">
+        <p class="mb-0 fw-bold">Loja fechada no momento!</p>
+    </section> 
+
+
+
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.esm.js"></script>
+<script src="js/bootstrap.esm.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/item.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</body>
+</html>
